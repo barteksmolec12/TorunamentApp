@@ -34,7 +34,7 @@
 			this.entryFeeLabel = new System.Windows.Forms.Label();
 			this.entryFeeValue = new System.Windows.Forms.TextBox();
 			this.selectTeamLabel = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.selectTeamDropDown = new System.Windows.Forms.ComboBox();
 			this.addTeamButton = new System.Windows.Forms.Button();
 			this.createPrizeButton = new System.Windows.Forms.Button();
 			this.tournamentPlayersLabel = new System.Windows.Forms.Label();
@@ -107,13 +107,13 @@
 			this.selectTeamLabel.TabIndex = 7;
 			this.selectTeamLabel.Text = "Select Team";
 			// 
-			// comboBox1
+			// selectTeamDropDown
 			// 
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(39, 271);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(264, 38);
-			this.comboBox1.TabIndex = 8;
+			this.selectTeamDropDown.FormattingEnabled = true;
+			this.selectTeamDropDown.Location = new System.Drawing.Point(39, 271);
+			this.selectTeamDropDown.Name = "selectTeamDropDown";
+			this.selectTeamDropDown.Size = new System.Drawing.Size(264, 38);
+			this.selectTeamDropDown.TabIndex = 8;
 			// 
 			// addTeamButton
 			// 
@@ -268,7 +268,7 @@
 			this.Controls.Add(this.tournamentPlayersLabel);
 			this.Controls.Add(this.createPrizeButton);
 			this.Controls.Add(this.addTeamButton);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.selectTeamDropDown);
 			this.Controls.Add(this.selectTeamLabel);
 			this.Controls.Add(this.entryFeeValue);
 			this.Controls.Add(this.entryFeeLabel);
@@ -292,7 +292,7 @@
 		private System.Windows.Forms.Label entryFeeLabel;
 		private System.Windows.Forms.TextBox entryFeeValue;
 		private System.Windows.Forms.Label selectTeamLabel;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox selectTeamDropDown;
 		private System.Windows.Forms.Button addTeamButton;
 		private System.Windows.Forms.Button createPrizeButton;
 		private System.Windows.Forms.Label tournamentPlayersLabel;
