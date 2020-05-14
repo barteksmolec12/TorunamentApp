@@ -7,3 +7,4 @@ C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\Tr
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csproj.GenerateResource.cache
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.exe
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.pdb
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
