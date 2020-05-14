@@ -1,0 +1,9 @@
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\TrackerUI.exe.config
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\TrackerUI.exe
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\TrackerUI.pdb
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csprojAssemblyReference.cache
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.TournamentViewerForm.resources
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.Properties.Resources.resources
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csproj.GenerateResource.cache
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.exe
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.pdb
