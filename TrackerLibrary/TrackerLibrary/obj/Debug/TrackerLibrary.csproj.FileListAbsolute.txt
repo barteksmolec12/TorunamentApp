@@ -1,1 +1,5 @@
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerLibrary\obj\Debug\TrackerLibrary.csprojAssemblyReference.cache
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerLibrary\bin\Debug\TrackerLibrary.dll
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerLibrary\bin\Debug\TrackerLibrary.pdb
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerLibrary\obj\Debug\TrackerLibrary.dll
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerLibrary\obj\Debug\TrackerLibrary.pdb

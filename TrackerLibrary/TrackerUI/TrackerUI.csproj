@@ -52,11 +52,11 @@
     <Compile Include="CreatePrizeForm.Designer.cs">
       <DependentUpon>CreatePrizeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="CreateTeam.cs">
+    <Compile Include="CreateTeamForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CreateTeam.Designer.cs">
-      <DependentUpon>CreateTeam.cs</DependentUpon>
+    <Compile Include="CreateTeamForm.Designer.cs">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateTournamentForm.cs">
       <SubType>Form</SubType>
@@ -81,8 +81,8 @@
     <EmbeddedResource Include="CreatePrizeForm.resx">
       <DependentUpon>CreatePrizeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CreateTeam.resx">
-      <DependentUpon>CreateTeam.cs</DependentUpon>
+    <EmbeddedResource Include="CreateTeamForm.resx">
+      <DependentUpon>CreateTeamForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateTournamentForm.resx">
       <DependentUpon>CreateTournamentForm.cs</DependentUpon>
@@ -114,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TrackerLibrary\TrackerLibrary.csproj">
+      <Project>{43d3894f-0833-4ab6-b3e7-d0b1b26393aa}</Project>
+      <Name>TrackerLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

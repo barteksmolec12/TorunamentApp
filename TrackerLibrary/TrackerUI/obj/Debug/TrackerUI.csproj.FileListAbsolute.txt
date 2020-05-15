@@ -8,6 +8,9 @@ C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\Tr
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.exe
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.pdb
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
-C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.prizeAmountValue.resources
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.TournamentDashboardForm.resources
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.CreatePrizeForm.resources
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\TrackerLibrary.dll
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\TrackerLibrary.pdb
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
