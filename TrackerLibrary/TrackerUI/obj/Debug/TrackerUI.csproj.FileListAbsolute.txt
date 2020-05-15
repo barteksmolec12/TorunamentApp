@@ -8,3 +8,6 @@ C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\Tr
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.exe
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.pdb
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.CreateTournamentForm.resources
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.prizeAmountValue.resources
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.CreateTeamForm.resources
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.TournamentDashboardForm.resources

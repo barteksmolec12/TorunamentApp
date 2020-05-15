@@ -110,7 +110,7 @@
 			// selectTeamDropDown
 			// 
 			this.selectTeamDropDown.FormattingEnabled = true;
-			this.selectTeamDropDown.Location = new System.Drawing.Point(39, 271);
+			this.selectTeamDropDown.Location = new System.Drawing.Point(54, 270);
 			this.selectTeamDropDown.Name = "selectTeamDropDown";
 			this.selectTeamDropDown.Size = new System.Drawing.Size(264, 38);
 			this.selectTeamDropDown.TabIndex = 8;
