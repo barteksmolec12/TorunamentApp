@@ -14,3 +14,5 @@ C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\Tr
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\TrackerLibrary.dll
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\TrackerLibrary.pdb
 C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\obj\Debug\TrackerUI.csproj.CopyComplete
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\Dapper.dll
+C:\Users\Bartek\Desktop\studiaATH\C#\tournament APP\tournament\TrackerLibrary\TrackerUI\bin\Debug\Dapper.xml

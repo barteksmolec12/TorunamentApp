@@ -33,7 +33,7 @@ namespace TrackerUI
 				foreach(IDataConnection db in GlobalConfig.Connections)
 				{
 					db.CreatePrize(model);
-				}
+				}  
 
 				placeNameValue.Text = "";
 				placeNumberValue.Text = "";
