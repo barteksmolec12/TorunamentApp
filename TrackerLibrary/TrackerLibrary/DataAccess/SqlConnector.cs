@@ -1,18 +1,13 @@
 ﻿using Dapper;
-using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TrackerLibrary.DataAccess;
 using TrackerLibrary.Models;
 
 namespace TrackerLibrary
 {
 	public class SqlConnector : IDataConnection
-	{	// TODO - Make the CreatePrize method actually save to the database.
+	{   // TODO - Make the CreatePrize method actually save to the database.
 		/// <summary>
 		/// Save to a new prize to the database.
 		/// </summary>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Configuration;
 using TrackerLibrary.DataAccess;
 
 namespace TrackerLibrary
@@ -11,9 +6,9 @@ namespace TrackerLibrary
 	public static class GlobalConfig
 	{
 		public static IDataConnection Connections { get; private set; }
-		public static void InitializeConnections (DatabaseType db)
+		public static void InitializeConnections(DatabaseType db)
 		{
-			if(db == DatabaseType.Sql)
+			if (db == DatabaseType.Sql)
 			{
 				//do something
 				//TODO - CREATE the SQL connection
@@ -27,14 +22,14 @@ namespace TrackerLibrary
 				TextConnector text = new TextConnector();
 				Connections = text;
 			}
-				
+
 		}
 		public static string CnnString(string name)
 		{
 			return ConfigurationManager.ConnectionStrings[name].ConnectionString;
 		}
-		
+
 	}
-	
+
 }
 

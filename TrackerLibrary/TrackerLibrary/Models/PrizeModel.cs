@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TrackerLibrary.Models
+﻿namespace TrackerLibrary.Models
 {
 	public class PrizeModel
 	{
@@ -17,7 +11,7 @@ namespace TrackerLibrary.Models
 		{
 
 		}
-		public PrizeModel(string placeName, string placeNumber,string prizeAmount,string prizePercentage)
+		public PrizeModel(string placeName, string placeNumber, string prizeAmount, string prizePercentage)
 		{
 			PlaceName = placeName;
 
@@ -38,6 +32,6 @@ namespace TrackerLibrary.Models
 		}
 	}
 
-	
+
 
 }
