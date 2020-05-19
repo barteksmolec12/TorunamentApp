@@ -8,7 +8,8 @@ using System.IO;
 using TrackerLibrary.Models;
 
 
-namespace TrackerLibrary.DataAccess.TextHelpers { 
+namespace TrackerLibrary.DataAccess.TextHelpers 
+{ 
 	public static class TextConnectorProcessor
 	{
 		public static string FullFilePath(this string fileName)
@@ -48,6 +49,16 @@ namespace TrackerLibrary.DataAccess.TextHelpers {
 			}
 
 			return output;
+		}
+		public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
+		{
+			List<string> lines = new List<string>();
+			foreach (PrizeModel p in models)
+			{
+				lines.Add($"{p.Id},{p.PlaceNumber},{p.PlaceName},{p.PrizePercentage},{p.PrizePercentage}"); 
+
+			}
+			File.WriteAllLines(fileName.FullFilePath(), lines);
 		}
 	}
 }
