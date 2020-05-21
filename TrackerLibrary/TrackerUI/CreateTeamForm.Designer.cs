@@ -34,7 +34,7 @@
 			this.SelectTeamMemberLabel = new System.Windows.Forms.Label();
 			this.selectTeamMemberDropDown = new System.Windows.Forms.ComboBox();
 			this.addMemberButton = new System.Windows.Forms.Button();
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.MemberGroup = new System.Windows.Forms.GroupBox();
 			this.createMemberButton = new System.Windows.Forms.Button();
 			this.cellphoneValue = new System.Windows.Forms.TextBox();
 			this.cellphoneLabel = new System.Windows.Forms.Label();
@@ -47,7 +47,7 @@
 			this.teamMembersListBox = new System.Windows.Forms.ListBox();
 			this.createTeamButton = new System.Windows.Forms.Button();
 			this.deleteSelectedMembersButton = new System.Windows.Forms.Button();
-			this.groupBox1.SuspendLayout();
+			this.MemberGroup.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// createTeamLabel
@@ -118,26 +118,26 @@
 			this.addMemberButton.Text = "Add Member";
 			this.addMemberButton.UseVisualStyleBackColor = false;
 			// 
-			// groupBox1
+			// MemberGroup
 			// 
-			this.groupBox1.Controls.Add(this.createMemberButton);
-			this.groupBox1.Controls.Add(this.cellphoneValue);
-			this.groupBox1.Controls.Add(this.cellphoneLabel);
-			this.groupBox1.Controls.Add(this.emailValue);
-			this.groupBox1.Controls.Add(this.emailLabel);
-			this.groupBox1.Controls.Add(this.lastNameValue);
-			this.groupBox1.Controls.Add(this.lastNameLabel);
-			this.groupBox1.Controls.Add(this.firstNameValue);
-			this.groupBox1.Controls.Add(this.firstNameLabel);
-			this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold);
-			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
-			this.groupBox1.Location = new System.Drawing.Point(28, 274);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(273, 236);
-			this.groupBox1.TabIndex = 15;
-			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Add New Member";
-			this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+			this.MemberGroup.Controls.Add(this.createMemberButton);
+			this.MemberGroup.Controls.Add(this.cellphoneValue);
+			this.MemberGroup.Controls.Add(this.cellphoneLabel);
+			this.MemberGroup.Controls.Add(this.emailValue);
+			this.MemberGroup.Controls.Add(this.emailLabel);
+			this.MemberGroup.Controls.Add(this.lastNameValue);
+			this.MemberGroup.Controls.Add(this.lastNameLabel);
+			this.MemberGroup.Controls.Add(this.firstNameValue);
+			this.MemberGroup.Controls.Add(this.firstNameLabel);
+			this.MemberGroup.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold);
+			this.MemberGroup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+			this.MemberGroup.Location = new System.Drawing.Point(28, 274);
+			this.MemberGroup.Name = "MemberGroup";
+			this.MemberGroup.Size = new System.Drawing.Size(273, 236);
+			this.MemberGroup.TabIndex = 15;
+			this.MemberGroup.TabStop = false;
+			this.MemberGroup.Text = "Add New Member";
+			
 			// 
 			// createMemberButton
 			// 
@@ -155,6 +155,7 @@
 			this.createMemberButton.TabIndex = 16;
 			this.createMemberButton.Text = "Create Member";
 			this.createMemberButton.UseVisualStyleBackColor = false;
+			this.createMemberButton.Click += new System.EventHandler(this.createMemberButton_Click);
 			// 
 			// cellphoneValue
 			// 
@@ -290,7 +291,7 @@
 			this.Controls.Add(this.deleteSelectedMembersButton);
 			this.Controls.Add(this.createTeamButton);
 			this.Controls.Add(this.teamMembersListBox);
-			this.Controls.Add(this.groupBox1);
+			this.Controls.Add(this.MemberGroup);
 			this.Controls.Add(this.addMemberButton);
 			this.Controls.Add(this.selectTeamMemberDropDown);
 			this.Controls.Add(this.SelectTeamMemberLabel);
@@ -299,8 +300,8 @@
 			this.Controls.Add(this.createTeamLabel);
 			this.Name = "CreateTeamForm";
 			this.Text = "Team Name";
-			this.groupBox1.ResumeLayout(false);
-			this.groupBox1.PerformLayout();
+			this.MemberGroup.ResumeLayout(false);
+			this.MemberGroup.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -314,7 +315,7 @@
 		private System.Windows.Forms.Label SelectTeamMemberLabel;
 		private System.Windows.Forms.ComboBox selectTeamMemberDropDown;
 		private System.Windows.Forms.Button addMemberButton;
-		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.GroupBox MemberGroup;
 		private System.Windows.Forms.Label firstNameLabel;
 		private System.Windows.Forms.TextBox firstNameValue;
 		private System.Windows.Forms.TextBox cellphoneValue;
