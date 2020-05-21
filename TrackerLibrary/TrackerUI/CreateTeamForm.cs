@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using TrackerLibrary;
 using TrackerLibrary.Models;
 
 namespace TrackerUI
@@ -17,12 +18,18 @@ namespace TrackerUI
 				PersonModel p = new PersonModel();
 				p.FirstName = firstNameValue.Text;
 				p.LastName = lastNameValue.Text;
-				p.EmailAddres = emailValue.Text;
+				p.EmailAddress = emailValue.Text;
 				p.CellphoneNumber = cellphoneValue.Text;
 
+				GlobalConfig.Connections.CreatePerson(p);
+
+				firstNameValue.Text = "";
+				lastNameValue.Text = "";
+				cellphoneValue.Text = "";
+				emailValue.Text = "";
 
 			}
-			 else
+			else
 			{
 				MessageBox.Show("You need fill in all fields ");
 			}
