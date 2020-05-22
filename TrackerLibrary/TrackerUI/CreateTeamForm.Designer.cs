@@ -117,6 +117,7 @@
 			this.addMemberButton.TabIndex = 14;
 			this.addMemberButton.Text = "Add Member";
 			this.addMemberButton.UseVisualStyleBackColor = false;
+			this.addMemberButton.Click += new System.EventHandler(this.addMemberButton_Click);
 			// 
 			// MemberGroup
 			// 
@@ -137,7 +138,6 @@
 			this.MemberGroup.TabIndex = 15;
 			this.MemberGroup.TabStop = false;
 			this.MemberGroup.Text = "Add New Member";
-			
 			// 
 			// createMemberButton
 			// 
@@ -281,6 +281,7 @@
 			this.deleteSelectedMembersButton.TabIndex = 20;
 			this.deleteSelectedMembersButton.Text = "Delete Selected";
 			this.deleteSelectedMembersButton.UseVisualStyleBackColor = false;
+			this.deleteSelectedMembersButton.Click += new System.EventHandler(this.deleteSelectedMembersButton_Click);
 			// 
 			// CreateTeamForm
 			// 
@@ -300,6 +301,7 @@
 			this.Controls.Add(this.createTeamLabel);
 			this.Name = "CreateTeamForm";
 			this.Text = "Team Name";
+			this.Load += new System.EventHandler(this.CreateTeamForm_Load);
 			this.MemberGroup.ResumeLayout(false);
 			this.MemberGroup.PerformLayout();
 			this.ResumeLayout(false);
