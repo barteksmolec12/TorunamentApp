@@ -35,9 +35,9 @@ namespace TrackerUI
 				p.EmailAddress = emailValue.Text;
 				p.CellphoneNumber = cellphoneValue.Text;
 
-				GlobalConfig.Connections.CreatePerson(p);
+				p=GlobalConfig.Connections.CreatePerson(p);
 				selectedTeamMemebers.Add(p);
-				WireUpLists();
+				WireUpLists(); 
 				firstNameValue.Text = "";
 				lastNameValue.Text = "";
 				cellphoneValue.Text = "";
@@ -88,6 +88,17 @@ namespace TrackerUI
 		private void CreateTeamForm_Load(object sender, EventArgs e)
 		{
 
+		}
+
+		private void createTeamButton_Click(object sender, EventArgs e)
+		{
+			TeamModel t = new TeamModel();
+			t.TeamMembers = selectedTeamMemebers;
+			t.TeamName = teamNameValue.Text;
+			t=GlobalConfig.Connections.CreateTeam(t);
+
+			teamNameValue.Text = "";
+			teamMembersListBox = null;
 		}
 	} 
 }
