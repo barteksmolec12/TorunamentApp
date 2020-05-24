@@ -98,7 +98,7 @@ namespace TrackerUI
 			t=GlobalConfig.Connections.CreateTeam(t);
 
 			teamNameValue.Text = "";
-			teamMembersListBox = null;
+			
 		}
 	} 
 }
