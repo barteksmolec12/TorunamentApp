@@ -114,7 +114,7 @@
 			this.addMemberButton.Location = new System.Drawing.Point(69, 216);
 			this.addMemberButton.Name = "addMemberButton";
 			this.addMemberButton.Size = new System.Drawing.Size(165, 42);
-			this.addMemberButton.TabIndex = 14;
+			this.addMemberButton.TabIndex = 21;
 			this.addMemberButton.Text = "Add Member";
 			this.addMemberButton.UseVisualStyleBackColor = false;
 			this.addMemberButton.Click += new System.EventHandler(this.addMemberButton_Click);

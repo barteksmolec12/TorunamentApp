@@ -63,5 +63,15 @@ namespace TrackerLibrary.DataAccess
 			teams.SaveToTeamFile(TeamFile);   
 			return model;
 		}
+
+		public TournamentModel CreateTournament(TournamentModel model)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public List<TeamModel> GetTeams_All()
+		{
+			throw new System.NotImplementedException();
+		}
 	}
 }

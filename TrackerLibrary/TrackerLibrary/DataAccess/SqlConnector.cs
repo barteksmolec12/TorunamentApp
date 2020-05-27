@@ -88,5 +88,24 @@ namespace TrackerLibrary
 			return model;
 
 		}
+
+		public TournamentModel CreateTournament(TournamentModel model)
+		{
+			throw new System.NotImplementedException();
+		}
+
+		public List<TeamModel> GetTeams_All()
+		{
+			List<TeamModel> output = new List<TeamModel>();
+
+
+			using (IDbConnection connection = new SqlConnection(GlobalConfig.CnnString("Tournaments")))
+			{
+				output = connection.Query<TeamModel>("dbo.spTeams_GetAll").ToList();
+
+			}
+			return output;
+
+		}
 	}
 }

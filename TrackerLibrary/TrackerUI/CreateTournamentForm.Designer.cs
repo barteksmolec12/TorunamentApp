@@ -34,7 +34,6 @@
 			this.entryFeeLabel = new System.Windows.Forms.Label();
 			this.entryFeeValue = new System.Windows.Forms.TextBox();
 			this.selectTeamLabel = new System.Windows.Forms.Label();
-			this.selectTeamDropDown = new System.Windows.Forms.ComboBox();
 			this.addTeamButton = new System.Windows.Forms.Button();
 			this.createPrizeButton = new System.Windows.Forms.Button();
 			this.tournamentPlayersLabel = new System.Windows.Forms.Label();
@@ -45,6 +44,7 @@
 			this.deleteSelectedPrizes = new System.Windows.Forms.Button();
 			this.createNewTeamLink = new System.Windows.Forms.LinkLabel();
 			this.createTournamentbutton = new System.Windows.Forms.Button();
+			this.selectTeamsDropDown = new System.Windows.Forms.ComboBox();
 			this.SuspendLayout();
 			// 
 			// createTournamentLabel
@@ -107,14 +107,6 @@
 			this.selectTeamLabel.TabIndex = 7;
 			this.selectTeamLabel.Text = "Select Team";
 			// 
-			// selectTeamDropDown
-			// 
-			this.selectTeamDropDown.FormattingEnabled = true;
-			this.selectTeamDropDown.Location = new System.Drawing.Point(54, 270);
-			this.selectTeamDropDown.Name = "selectTeamDropDown";
-			this.selectTeamDropDown.Size = new System.Drawing.Size(264, 38);
-			this.selectTeamDropDown.TabIndex = 8;
-			// 
 			// addTeamButton
 			// 
 			this.addTeamButton.BackColor = System.Drawing.Color.White;
@@ -131,6 +123,7 @@
 			this.addTeamButton.TabIndex = 13;
 			this.addTeamButton.Text = "Add Team";
 			this.addTeamButton.UseVisualStyleBackColor = false;
+			this.addTeamButton.Click += new System.EventHandler(this.addTeamButton_Click);
 			// 
 			// createPrizeButton
 			// 
@@ -148,6 +141,7 @@
 			this.createPrizeButton.TabIndex = 14;
 			this.createPrizeButton.Text = "Create Prize";
 			this.createPrizeButton.UseVisualStyleBackColor = false;
+			this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
 			// 
 			// tournamentPlayersLabel
 			// 
@@ -234,6 +228,7 @@
 			this.createNewTeamLink.TabIndex = 21;
 			this.createNewTeamLink.TabStop = true;
 			this.createNewTeamLink.Text = "create new";
+			this.createNewTeamLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createNewTeamLink_LinkClicked);
 			// 
 			// createTournamentbutton
 			// 
@@ -252,12 +247,23 @@
 			this.createTournamentbutton.Text = "Create Tournament";
 			this.createTournamentbutton.UseVisualStyleBackColor = false;
 			// 
+			// selectTeamsDropDown
+			// 
+			this.selectTeamsDropDown.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+			this.selectTeamsDropDown.FormattingEnabled = true;
+			this.selectTeamsDropDown.Location = new System.Drawing.Point(39, 275);
+			this.selectTeamsDropDown.Name = "selectTeamsDropDown";
+			this.selectTeamsDropDown.Size = new System.Drawing.Size(264, 28);
+			this.selectTeamsDropDown.TabIndex = 23;
+			this.selectTeamsDropDown.SelectedIndexChanged += new System.EventHandler(this.selectTeamsDropDown_SelectedIndexChanged);
+			// 
 			// CreateTournamentForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
 			this.ClientSize = new System.Drawing.Size(811, 559);
+			this.Controls.Add(this.selectTeamsDropDown);
 			this.Controls.Add(this.createTournamentbutton);
 			this.Controls.Add(this.createNewTeamLink);
 			this.Controls.Add(this.deleteSelectedPrizes);
@@ -268,7 +274,6 @@
 			this.Controls.Add(this.tournamentPlayersLabel);
 			this.Controls.Add(this.createPrizeButton);
 			this.Controls.Add(this.addTeamButton);
-			this.Controls.Add(this.selectTeamDropDown);
 			this.Controls.Add(this.selectTeamLabel);
 			this.Controls.Add(this.entryFeeValue);
 			this.Controls.Add(this.entryFeeLabel);
@@ -279,6 +284,7 @@
 			this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
 			this.Name = "CreateTournamentForm";
 			this.Text = "Create Tournament";
+			this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -292,7 +298,7 @@
 		private System.Windows.Forms.Label entryFeeLabel;
 		private System.Windows.Forms.TextBox entryFeeValue;
 		private System.Windows.Forms.Label selectTeamLabel;
-		private System.Windows.Forms.ComboBox selectTeamDropDown;
+		private System.Windows.Forms.ComboBox s;
 		private System.Windows.Forms.Button addTeamButton;
 		private System.Windows.Forms.Button createPrizeButton;
 		private System.Windows.Forms.Label tournamentPlayersLabel;
@@ -303,5 +309,6 @@
 		private System.Windows.Forms.Button deleteSelectedPrizes;
 		private System.Windows.Forms.LinkLabel createNewTeamLink;
 		private System.Windows.Forms.Button createTournamentbutton;
+		private System.Windows.Forms.ComboBox selectTeamsDropDown;
 	}
 }
