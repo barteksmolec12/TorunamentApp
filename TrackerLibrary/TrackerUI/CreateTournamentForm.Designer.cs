@@ -255,14 +255,13 @@
 			this.selectTeamsDropDown.Name = "selectTeamsDropDown";
 			this.selectTeamsDropDown.Size = new System.Drawing.Size(264, 28);
 			this.selectTeamsDropDown.TabIndex = 23;
-			this.selectTeamsDropDown.SelectedIndexChanged += new System.EventHandler(this.selectTeamsDropDown_SelectedIndexChanged);
 			// 
 			// CreateTournamentForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.White;
-			this.ClientSize = new System.Drawing.Size(811, 559);
+			this.ClientSize = new System.Drawing.Size(583, 559);
 			this.Controls.Add(this.selectTeamsDropDown);
 			this.Controls.Add(this.createTournamentbutton);
 			this.Controls.Add(this.createNewTeamLink);

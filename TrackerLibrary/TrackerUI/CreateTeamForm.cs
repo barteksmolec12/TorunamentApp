@@ -15,12 +15,7 @@ namespace TrackerUI
 			InitializeComponent();
 			WireUpLists();
 		}
-		protected override void OnFormClosing(FormClosingEventArgs e)
-		{
-			WireUpLists();
-		
-			
-		}
+	
 		private void WireUpLists()
 		{
 			selectTeamMemberDropDown.DataSource = null;
@@ -95,13 +90,16 @@ namespace TrackerUI
 		{
 
 		}
-
+		
 		private void createTeamButton_Click(object sender, EventArgs e)
 		{
 			TeamModel t = new TeamModel();
 			t.TeamMembers = selectedTeamMemebers;
 			t.TeamName = teamNameValue.Text;
 			t=GlobalConfig.Connections.CreateTeam(t);
+			CreateTournamentForm ct = new CreateTournamentForm();
+		
+			ct.WireUpList();
 			
 			teamNameValue.Text = "";
 			

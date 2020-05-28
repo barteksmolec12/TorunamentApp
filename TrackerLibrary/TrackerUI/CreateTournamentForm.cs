@@ -22,12 +22,15 @@ namespace TrackerUI
 
 		}
 		
-		public void WireUpList()
+		public  void WireUpList()
 		{
 			selectTeamsDropDown.DataSource = null;
 			selectTeamsDropDown.DataSource = teams;
 			selectTeamsDropDown.DisplayMember = "TeamName";
 
+			tournamentlistBox.DataSource = null;
+			tournamentlistBox.DataSource = selectedTeams;
+			tournamentlistBox.DisplayMember = "TeamName";
 
 		}
 		
@@ -42,13 +45,11 @@ namespace TrackerUI
 
 		private void addTeamButton_Click(object sender, EventArgs e)
 		{
-			
+			TeamModel t = (TeamModel)selectTeamsDropDown.SelectedItem;
+			teams.Remove(t);
+			selectedTeams.Add(t);
 			WireUpList();
-			
-			//PersonModel p = (PersonModel)selectTeamMemberDropDown.SelectedItem;
-			//availableTeamMembers.Remove(p);
-			//selectedTeamMemebers.Add(p);
-			//WireUpLists();
+	
 
 		}
 
@@ -56,7 +57,7 @@ namespace TrackerUI
 		{
 			CreateTeamForm createTeamForm = new CreateTeamForm();
 			createTeamForm.Show();
-			WireUpList();
+			
 
 		}
 
@@ -66,16 +67,7 @@ namespace TrackerUI
 			
 		}
 
-		private void selectTeamsDropDown_SelectedIndexChanged(object sender, EventArgs e)
-		{
-			
-			
-		}
-		private void selectTeamsDropDown_SelectionChangeCommitted(object sender, EventArgs e)
-		{
-			MessageBox.Show("działa");
-
-		}
+		
 
 	}
 }
