@@ -114,6 +114,7 @@
 			this.selectTeamDropDown.Name = "selectTeamDropDown";
 			this.selectTeamDropDown.Size = new System.Drawing.Size(264, 38);
 			this.selectTeamDropDown.TabIndex = 8;
+			this.selectTeamDropDown.SelectedIndexChanged += new System.EventHandler(this.selectTeamDropDown_SelectedIndexChanged);
 			// 
 			// addTeamButton
 			// 
@@ -131,6 +132,7 @@
 			this.addTeamButton.TabIndex = 13;
 			this.addTeamButton.Text = "Add Team";
 			this.addTeamButton.UseVisualStyleBackColor = false;
+			this.addTeamButton.Click += new System.EventHandler(this.addTeamButton_Click);
 			// 
 			// createPrizeButton
 			// 
@@ -148,6 +150,7 @@
 			this.createPrizeButton.TabIndex = 14;
 			this.createPrizeButton.Text = "Create Prize";
 			this.createPrizeButton.UseVisualStyleBackColor = false;
+			this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
 			// 
 			// tournamentPlayersLabel
 			// 
@@ -279,6 +282,7 @@
 			this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
 			this.Name = "CreateTournamentForm";
 			this.Text = "Create Tournament";
+			this.Load += new System.EventHandler(this.CreateTournamentForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

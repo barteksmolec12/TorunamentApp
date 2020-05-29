@@ -184,6 +184,7 @@
 			this.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
 			this.Name = "CreatePrizeForm";
 			this.Text = "CreatePrize";
+			this.Load += new System.EventHandler(this.CreatePrizeForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
