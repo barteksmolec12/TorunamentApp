@@ -210,6 +210,7 @@
 			this.deleteSelectedPlayers.TabIndex = 19;
 			this.deleteSelectedPlayers.Text = "Delete Selected";
 			this.deleteSelectedPlayers.UseVisualStyleBackColor = false;
+			this.deleteSelectedPlayers.Click += new System.EventHandler(this.deleteSelectedPlayers_Click);
 			// 
 			// deleteSelectedPrizes
 			// 
@@ -227,6 +228,7 @@
 			this.deleteSelectedPrizes.TabIndex = 20;
 			this.deleteSelectedPrizes.Text = "Delete Selected";
 			this.deleteSelectedPrizes.UseVisualStyleBackColor = false;
+			this.deleteSelectedPrizes.Click += new System.EventHandler(this.deleteSelectedPrizes_Click);
 			// 
 			// createNewTeamLink
 			// 
@@ -237,6 +239,7 @@
 			this.createNewTeamLink.TabIndex = 21;
 			this.createNewTeamLink.TabStop = true;
 			this.createNewTeamLink.Text = "create new";
+			this.createNewTeamLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createNewTeamLink_LinkClicked);
 			// 
 			// createTournamentbutton
 			// 
