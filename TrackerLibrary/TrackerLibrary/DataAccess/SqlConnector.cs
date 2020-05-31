@@ -35,7 +35,7 @@ namespace TrackerLibrary
 		public PersonModel CreatePerson(PersonModel model)
 		{
 
-			using(IDbConnection connection = new SqlConnection(GlobalConfig.CnnString("Tournaments")))
+			using (IDbConnection connection = new SqlConnection(GlobalConfig.CnnString("Tournaments")))
 			{
 				var p = new DynamicParameters();
 				p.Add("@FirstName", model.FirstName);
@@ -49,7 +49,7 @@ namespace TrackerLibrary
 				//model.Id = p.Get<int>("@id");
 				return model;
 			}
-				
+
 		}
 
 		public List<PersonModel> GetPerson_All()
@@ -68,7 +68,7 @@ namespace TrackerLibrary
 		{
 			using (IDbConnection connection = new SqlConnection(GlobalConfig.CnnString("Tournaments")))
 			{
-				var p = new DynamicParameters(); 
+				var p = new DynamicParameters();
 				p.Add("@TeamName", model.TeamName);
 				p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
 
@@ -83,7 +83,7 @@ namespace TrackerLibrary
 					connection.Execute("dbo.spTeamMembers_Insert", p, commandType: CommandType.StoredProcedure);
 
 				}
-				
+
 			}
 			return model;
 
@@ -100,11 +100,42 @@ namespace TrackerLibrary
 					var p = new DynamicParameters();
 					p.Add("@TeamId", team.Id);
 
-					team.TeamMembers= connection.Query<PersonModel >("dbo.spTeamMembers_GetByTeam ",p,commandType: CommandType.StoredProcedure).ToList();
+					team.TeamMembers = connection.Query<PersonModel>("dbo.spTeamMembers_GetByTeam ", p, commandType: CommandType.StoredProcedure).ToList();
 
 				}
 			}
 			return output;
+		}
+
+		public TournamentModel CreateTournament(TournamentModel model)
+		{
+			using (IDbConnection connection = new SqlConnection(GlobalConfig.CnnString("Tournaments")))
+			{
+
+				// add to Tournaments
+				var p = new DynamicParameters();
+				p.Add("@TournamentName", model.TournamentName);
+				p.Add("@EntryFee", model.EntryFee);
+				p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+
+
+				connection.Execute("dbo.spTeams_Insert", p, commandType: CommandType.StoredProcedure);
+				model.Id = p.Get<int>("@id");
+				
+				//add to TournamentsPrizes
+				foreach (PrizeModel pm in model.Prizes)
+				{
+					p = new DynamicParameters();
+					p.Add("@TournamentId", model.Id);
+					p.Add("@id", 0, dbType: DbType.Int32, direction: ParameterDirection.Output);
+					connection.Execute("dbo.spTeamMembers_Insert", p, commandType: CommandType.StoredProcedure);
+
+				}
+
+				//add to TournamentsEntries
+
+			}
+			return model;
 		}
 	}
 }
