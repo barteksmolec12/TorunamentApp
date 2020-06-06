@@ -157,10 +157,11 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
 			foreach (string line in lines)
 			{
+				string[] cols = line.Split(',');
+   
 				TournamentModel tm = new TournamentModel();
 
-				string[] cols = line.Split(',');
-
+				
 				tm.Id = int.Parse(cols[0]);
 				tm.TournamentName = cols[1];
 				tm.EntryFee = decimal.Parse(cols[2]);
@@ -184,7 +185,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 
 		}
 
-		public static void SaveToTournamentModel(this List <TournamentModel> models,string tournamentfile)
+		public static void SaveToTournamentFile(this List <TournamentModel> models,string tournamentfile)
 
 		{
 			List<string> lines = new List<string>();
@@ -192,7 +193,7 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 			foreach (TournamentModel tm in models)
 
 			{
-				lines.Add($"{tm.Id},{tm.TournamentName},{tm.EntryFee},{ConvertTeamsListToString(tm.EnteredTeams)},{ConvertPrizesListToString(tm.Prizes)}");
+				lines.Add($"{tm.Id},{tm.TournamentName},{tm.EntryFee},{ConvertTeamsListToString(tm.EnteredTeams)},{ConvertPrizesListToString(tm.Prizes)},{ConvertRoundsListToString(tm.Rounds)}");
 
 			}
 			File.WriteAllLines(tournamentfile.FullFilePath(), lines);
@@ -202,6 +203,10 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 		private static string ConvertTeamsListToString(List<TeamModel> models)
 		{
 			string output = "";
+			if(models.Count==0)
+			{
+				return "";
+			}
 
 			foreach (TeamModel tm in models)
 			{
@@ -214,6 +219,10 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 		private static string ConvertPrizesListToString (List<PrizeModel> models)
 		{
 			string output = "";
+			if(models.Count==0)
+			{
+				return ""; 
+			}
 
 			foreach (PrizeModel p in models)
 			{
@@ -224,5 +233,39 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 				
 			return output;
 		}
+		private static string ConvertRoundsListToString(List<List<MatchupModel>> rounds)
+		{
+			string output = "";
+			if (rounds.Count == 0)
+			{
+				return "";
+			}
+
+			foreach (List<MatchupModel> r in rounds)
+			{
+				output = output + $"{ConvertMatchupListToString(r)}|";
+			}
+			output = output.Substring(0, output.Length - 1);
+
+			return output;
+		}
+		private static string ConvertMatchupListToString(List<MatchupModel> matchups)
+		{
+			string output = "";
+			if (matchups.Count == 0)
+			{
+				return "";
+			}
+
+			foreach (MatchupModel r in matchups)
+			{
+				output = output + $"{r.Id}|";
+			}
+			output = output.Substring(0, output.Length - 1);
+
+			return output;
+		}
 	}
+	
+
 }
